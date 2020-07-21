@@ -3,7 +3,7 @@ package edu.htu.upskilling.java.lecture5;
 public class Files2 {
 	public static void main(String[] args) {
 		String newLine=System.getProperty("line.separator");
-		String marksString=Files1.readFile("marks.csv");
+		String marksString=Files1.readFile("marks.txt");
 		String students[]=marksString.split(newLine);
 		
 		for (int i = 0; i < students.length; i++) {
