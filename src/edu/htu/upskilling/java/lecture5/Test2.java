@@ -1,6 +1,4 @@
-package edu.htu.upskilling.java.lecture6;
-
-import edu.htu.upskilling.java.lecture5.Files1;
+package edu.htu.upskilling.java.lecture5;
 
 public class Test2 {
 	public static void main(String[] args) {

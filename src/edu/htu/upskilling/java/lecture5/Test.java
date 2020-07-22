@@ -1,4 +1,4 @@
-package edu.htu.upskilling.java.lecture6;
+package edu.htu.upskilling.java.lecture5;
 
 import java.util.Scanner;
 
