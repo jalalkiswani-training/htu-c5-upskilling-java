@@ -1,6 +1,6 @@
 package edu.htu.upskilling.java.lecture6;
 
-public class OopTest {
+public class PersonTest {
 	public static void main(String[] args) {
 		//Person: class name
 		//p: reference
