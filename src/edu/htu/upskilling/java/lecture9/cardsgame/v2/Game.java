@@ -1,4 +1,4 @@
-package edu.htu.upskilling.java.lecture9.cardsgame;
+package edu.htu.upskilling.java.lecture9.cardsgame.v2;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -75,7 +75,8 @@ public class Game {
 	private Card[] createCards() {
 		Card[] cards = new Card[52];
 		int cardCounter = 0;
-		for (CardType cardType : CardType.values()) {
+		String types[]= {"SAPDES","CLUBS","DIAMONDS","HEARTS"}; 
+		for (String cardType : types) {
 			for (int i = 1; i <= 13; i++) {
 				Card card = new Card(i, cardType);
 				cards[cardCounter++] = card;

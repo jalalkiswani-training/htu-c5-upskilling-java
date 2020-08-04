@@ -1,11 +1,11 @@
-package edu.htu.upskilling.java.lecture9.cardsgame;
+package edu.htu.upskilling.java.lecture9.cardsgame.v2;
 
 public class Card {
 	private int value;
-	private CardType type;
+	private String type;
 
-	public Card(int value, CardType cardType) {
-		setValue(value);		
+	public Card(int value, String cardType) {
+		setValue(value);
 		setType(cardType);
 	}
 
@@ -17,11 +17,11 @@ public class Card {
 		this.value = value;
 	}
 
-	public CardType getType() {
+	public String getType() {
 		return type;
 	}
 
-	public void setType(CardType type) {
+	public void setType(String type) {
 		this.type = type;
 	}
 

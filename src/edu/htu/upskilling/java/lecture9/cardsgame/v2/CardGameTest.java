@@ -1,4 +1,4 @@
-package edu.htu.upskilling.java.lecture9.cardsgame;
+package edu.htu.upskilling.java.lecture9.cardsgame.v2;
 
 public class CardGameTest {
 	public static void main(String[] args) {
