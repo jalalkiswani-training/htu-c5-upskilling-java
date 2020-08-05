@@ -4,6 +4,7 @@ public class Department {
 	private int deptId;
 	private String deptName;
 	private String deptLocation;
+	private String location;
 
 	@Override
 	public String toString() {
@@ -43,4 +44,9 @@ public class Department {
 		this.deptName = deptName;
 		this.deptLocation = deptLocation;
 	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
 }

@@ -1,4 +1,4 @@
-package edu.htu.upskilling.java.lecture8.abstract;
+package edu.htu.upskilling.java.lecture8.abstacttest;
 
 // Concrete class: first class that add implementation for the abstract method
 public class Swan extends Animal{

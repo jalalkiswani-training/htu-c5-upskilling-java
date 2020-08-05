@@ -1,4 +1,4 @@
-package edu.htu.upskilling.java.lecture8.abstract;
+package edu.htu.upskilling.java.lecture8.abstacttest;
 
 public class Test {
 
