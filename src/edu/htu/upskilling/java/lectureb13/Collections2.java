@@ -1,10 +1,11 @@
 package edu.htu.upskilling.java.lectureb13;
 
+import java.util.ArrayList;
 import java.util.Vector;
 
 public class Collections2 {
 	public static void main(String[] args) {
-		Vector v2=new Vector();
+		ArrayList v2=new ArrayList();
 
 		v2.add(new Person(101,"Ata"));
 		v2.add(new Person(102,"Essa"));
