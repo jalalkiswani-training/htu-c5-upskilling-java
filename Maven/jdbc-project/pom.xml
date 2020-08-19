@@ -6,12 +6,17 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/com.jalalkiswani/smart-cloud-util -->
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.21</version>
+		</dependency>
+
 		<dependency>
 			<groupId>com.jalalkiswani</groupId>
 			<artifactId>smart-cloud-util</artifactId>
 			<version>3.0.0</version>
 		</dependency>
-
 	</dependencies>
 </project>
