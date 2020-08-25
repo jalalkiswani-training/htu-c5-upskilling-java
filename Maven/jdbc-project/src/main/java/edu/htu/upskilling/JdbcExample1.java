@@ -16,26 +16,26 @@ public class JdbcExample1 {
 
 			System.out.println("Deleting all previous records");
 			PreparedStatement ps2 = con.prepareStatement("DELETE FROM hr_employees");
-			ps2.execute();
+			ps2.executeUpdate();
 
 			System.out.println("Inserting record 1");
 			PreparedStatement ps = con.prepareStatement("INSERT INTO hr_employees VALUES(?,?,?)");
 			ps.setInt(1, 1);
 			ps.setString(2, "Ata");
 			ps.setDouble(3, 100);
-			ps.execute();
+			ps.executeUpdate();
 
 			System.out.println("Inserting record 2");
 			ps.setInt(1, 2);
 			ps.setString(2, "Jamal");
 			ps.setDouble(3, 200);
-			ps.execute();
+			ps.executeUpdate();
 
 			System.out.println("Updating record");
 			PreparedStatement ps3 = con.prepareStatement("UPDATE hr_employees SET emp_salary=? WHERE emp_id=?");
 			ps3.setInt(1, 500);
 			ps3.setInt(2, 2);
-			ps3.execute();
+			ps3.executeUpdate();
 
 			PreparedStatement ps4 = con.prepareStatement("SELECT emp_id,emp_name,emp_salary FROM hr_employees");
 			ResultSet rs = ps4.executeQuery();
