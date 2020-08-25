@@ -8,11 +8,7 @@ import java.sql.SQLException;
 import java.util.Vector;
 
 //DAO: Data Access Object
-public class VehicleDao {
-
-	private static final String DB_URL = "jdbc:mysql://localhost:3306/upskilling_java";
-	private static final String DB_PASSWORD = "123456";
-	private static final String DB_USERNAME = "root";
+public class VehicleDao extends GeneralDao{
 
 	/////////////////////////////////////////
 	public Vector<Vehicle> getAll() throws SQLException {
@@ -96,11 +92,6 @@ public class VehicleDao {
 		} finally {
 			connection.close();
 		}
-	}
-
-	/////////////////////////////////////////////////////////
-	private Connection getConnection() throws SQLException {
-		return DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
 	}
 
 	/////////////////////////////////////////////////////////
