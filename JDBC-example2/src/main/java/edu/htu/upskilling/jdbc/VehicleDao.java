@@ -85,13 +85,17 @@ public class VehicleDao {
 	/////////////////////////////////////////
 	public void add(Vehicle v) throws SQLException {
 		Connection connection = getConnection();
-		PreparedStatement ps = connection.prepareStatement("INSERT INTO dmv_vehicles(veh_brand,veh_model,veh_year,veh_vin) VALUES (?,?,?,?)");
-		ps.setString(1, v.getVehBrand());
-		ps.setString(2, v.getVehModel());
-		ps.setInt(3, v.getVehYear());
-		ps.setString(4, v.getVehVin());
-		ps.executeUpdate();
-
+		try {
+			PreparedStatement ps = connection.prepareStatement("INSERT INTO dmv_vehicles(veh_brand,veh_model,veh_year,veh_vin) VALUES (?,?,?,?)");
+			ps.setString(1, v.getVehBrand());
+			ps.setString(2, v.getVehModel());
+			ps.setInt(3, v.getVehYear());
+			ps.setString(4, v.getVehVin());
+			ps.executeUpdate();
+			ps.close();
+		} finally {
+			connection.close();
+		}
 	}
 
 	/////////////////////////////////////////////////////////
