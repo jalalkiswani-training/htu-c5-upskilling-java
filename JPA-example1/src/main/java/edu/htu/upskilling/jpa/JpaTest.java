@@ -7,8 +7,10 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
+import oracle.jdbc.driver.OracleDriver;
+
 public class JpaTest {
-	public static void main(String[] args) {
+	public static void main(String[] args) {		
 //		addDriver();
 //		updateDriver();
 //		deleteDriver();
