@@ -8,7 +8,7 @@ public class DMV {
 
 	///////////////////////////////////////////////
 	public static void main(String[] args) throws ClassNotFoundException {
-		Class.forName("com.mysql.cj.jdbc.Driver");
+		
 		boolean stop = false;
 		while (!stop) {
 			try {

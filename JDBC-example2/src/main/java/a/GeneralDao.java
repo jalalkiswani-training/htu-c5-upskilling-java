@@ -1,5 +1,4 @@
-package edu.htu.upskilling.jdbc;
-
+package a;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
