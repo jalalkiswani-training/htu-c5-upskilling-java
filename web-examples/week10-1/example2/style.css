@@ -1,0 +1,78 @@
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 0.9em;
+    background-color: #f6fff8;
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+#frm-login {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    background-color: white;
+    width: 350px;
+    border: 1px solid #f6fff8;
+    padding: 20px;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#frm-login .form-icon {
+    color: #6B9080;
+}
+
+#frm-login .form-title {
+    border-bottom: 1px solid #ccc;
+    color: #6B9080;
+}
+
+#frm-login .form-body {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#frm-login label {}
+
+#frm-login input[type=text],
+#frm-login input[type=password] {
+    color: #6B9080;
+}
+
+#frm-login input[type=submit] {
+    background: #6B9080;
+    color: #F6FFF8;
+    border: 1px solid #ccc;
+    transition: all .4s;
+}
+
+#frm-login input[type=submit]:hover {
+    background: #CCE3DE;
+    color: #6B9080;
+}
+
+#frm-login .form-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#frm-login .form-footer a {
+    text-align: center;
+    color: #459671;
+    font-size: 0.9em;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+#frm-login .form-footer a:hover {
+    color: black;
+}
