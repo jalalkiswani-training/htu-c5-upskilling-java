@@ -1,0 +1,8 @@
+.class
+target
+.settings
+.project
+.classpath
+node_modules
+.factoryPath
+logs
