@@ -6,3 +6,6 @@ target
 node_modules
 .factoryPath
 logs
+.factorypath
+target
+MANIFEST.MF
